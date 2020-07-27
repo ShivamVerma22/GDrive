@@ -11,3 +11,148 @@ html, body{
   width: 100%;
   min-height: 100vh; 
 }
+
+main{
+  width: 95%;
+  min-height: calc(100vh - 70px);
+  margin: 0 auto;
+  display: flex;
+}
+
+#left{
+  width: 20%;
+  min-height: calc(100vh - 70px);
+  padding: 30px 0;
+}
+
+#left button{
+  padding: 13px 45px;
+  border-radius: 100px;
+  border: 1.5px solid rgb(42, 126, 221);
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: rgb(42, 126, 221);
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+}
+
+#left button i{
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+#left button:hover{
+  background-color: rgb(42, 126, 221);
+  color: #fff;
+  cursor: pointer;
+}
+
+.options{
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.options h4{
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #666;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #666;
+  display: inline-block;
+}
+
+.options a{
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.options a i{
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: 100;
+}
+
+#right{
+  width: 80%;
+  min-height: calc(100vh - 70px);
+  padding: 30px;
+}
+
+#right > h3{
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.folders{
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+.folder{
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(201, 201, 201);
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.folder i{
+  font-size: 14px;
+  margin-right: 5px;
+  color: #444;
+}
+
+.folder h4{
+  font-size: 12px;
+  color: #555;
+}
+
+
+.filesection{
+  width: 100%;
+  height: 500px;
+  padding: 30px 0;
+}
+
+.files{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.file{
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: 1px solid #e3e3e3;
+}
+
+.file .image{
+  height: 75%;
+  width: 100%;
+  background-color: #e3e3e3;
+}
+
+.file .dets{
+  height: 25%;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 30px;
+  padding-right: 80px;
+}
